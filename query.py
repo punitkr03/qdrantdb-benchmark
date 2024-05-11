@@ -59,10 +59,6 @@ query_hits = 0
 query_count = 0
 query_times = []
 
-res = query_db(query_vectors[0], n_results)
-resarr = [int(point.id) for point in res]
-print(resarr)
-
 for i in range(len(query_vectors)):
     print(f'\nQuery #{query_count + 1}')
     query_start_time = time.time()
